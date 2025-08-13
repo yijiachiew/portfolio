@@ -43,19 +43,56 @@
 
 /* Modern Portfolio Styles */
 
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #adcade;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  z-index: 100;
+  padding: 0.5rem 0;
+}
+
+.main-nav {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.expandable {
+  border-bottom: 1px solid #e0f2fe;
+  padding: 1rem 0;
+}
+
+.expandable-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expandable-content {
+  padding-left: 1.5rem;
+  overflow: hidden;
+}
+
 body {
-  background: #f7f7f9;
+  background: #6e8a9c;
   font-family: 'Segoe UI', Arial, sans-serif;
+  color: #334155;
 }
 
 .hero-section {
-  background: #fff;
+  background: #ffffff;
+  color: #334155;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 3rem 1rem 2rem 1rem;
   border-radius: 1.5rem;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
   margin-bottom: 2rem;
 }
 
@@ -65,10 +102,12 @@ body {
 }
 
 .skills-section {
-  background: #f5f7fa;
+  background: #ffffff;
+  color: #334155;
   padding: 2.5rem 1rem;
   border-radius: 1.5rem;
   margin-bottom: 2rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
 }
 
 .skills-grid {
@@ -84,17 +123,9 @@ body {
   height: 40px;
 }
 
-.timeline-section {
-  background: #23222b;
-  color: #fff;
-  padding: 2.5rem 1rem;
-  border-radius: 1.5rem;
-  margin-bottom: 2rem;
-}
-
 .timeline {
   position: relative;
-  border-left: 3px solid #a5b4fc;
+  border-left: 3px solid #7cb3d8;
   margin-left: 1.5rem;
   padding-left: 2rem;
 }
@@ -114,9 +145,9 @@ body {
   top: 0.2rem;
   width: 1.2rem;
   height: 1.2rem;
-  background: #6366f1;
+  background: #3b82f6;
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 3px solid #ffffff;
 }
 
 .section-title {
@@ -124,6 +155,7 @@ body {
   font-weight: 700;
   margin-bottom: 1.5rem;
   text-align: center;
+  color: #1e293b;
 }
 
 @media (min-width: 768px) {
